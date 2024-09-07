@@ -1,6 +1,7 @@
 //********************************************************
 // fracturing.c
 // Author: Carter Hildebrandt
+// UCFID: 5450622
 // Date: 9/5/24
 // Class: COP 3223, Professor Parra
 // Purpose: Calculate select properties defined by two points inputted by the user.
