@@ -25,12 +25,12 @@ static double x1_coord, y1_coord, x2_coord, y2_coord;
 // OUTPUT: None
 double askForUserInput(){
 
-    printf("Enter the coordinates for Point #1 (x1 x2)\n");     
+    printf("Enter the two X values of each point (x1 x2)\n");     
     printf("Enter a value: ");                                  
     scanf("%lf", &x1_coord);                            // First x Coordinate
     printf("Enter a value: "); 
     scanf("%lf", &x2_coord);                            // Second x Coordinate
-    printf("Enter the coordinates for Point #2 (y1 y2)\n");
+    printf("Enter the two Y values of each point (y1 y2)\n");
     printf("Enter a value: ");
     scanf("%lf", &y1_coord);                            // First y Coordinate
     printf("Enter a value: ");
