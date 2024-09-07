@@ -28,10 +28,10 @@ double askForUserInput(){
     printf("Enter a value: ");                                  
     scanf("%lf", &x1_coord);                            // First x Coordinate
     printf("Enter a value: "); 
-    scanf("%lf", &y1_coord);                            // Second x Coordinate
+    scanf("%lf", &x2_coord);                            // Second x Coordinate
     printf("Enter the coordinates for Point #2 (y1 y2)\n");
     printf("Enter a value: ");
-    scanf("%lf", &x2_coord);                            // First y Coordinate
+    scanf("%lf", &y1_coord);                            // First y Coordinate
     printf("Enter a value: ");
     scanf("%lf", &y2_coord);                            // Second y Coordinate
     return 0;
