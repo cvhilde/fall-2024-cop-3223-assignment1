@@ -1,6 +1,7 @@
 //********************************************************
 // fracturing.c
 // Author: Carter Hildebrandt
+// UCFID: 5450622
 // Date: 9/5/24
 // Class: COP 3223, Professor Parra
 // Purpose: Calculate select properties defined by two points inputted by the user.
@@ -19,6 +20,8 @@
 // OBJECTIVE: Calculate diameter
 // INPUT: Coordinates of inputted values
 // OUTPUT: Points entered and diameter for other functions to use
+// PRECONDITIONS: None
+// POSTCONDITIONS: Values for all points and a diameter variable
 double askForUserInput(){
     double x1, x2, y1, y2;
 
@@ -43,6 +46,8 @@ double askForUserInput(){
 // OBJECTIVE: Calculate distance between two points
 // INPUT: Reused diameter calculation
 // OUTPUT: Distance between two points
+// PRECONDITIONS: Inputs in the askForUserInput 
+// POSTCONDITIONS: Value will be in the distance variable and return
 double calculateDistance(){
     double distance = askForUserInput();
     printf("The distance between the two points is %.3lf\n", distance);
@@ -52,15 +57,19 @@ double calculateDistance(){
 // OBJECTIVE: Calculate perimeter from 2 points
 // INPUT: Diameter calculation
 // OUTPUT: Perimeter of the city (circle)
+// PRECONDITIONS: Inputs in the askForUserInput
+// POSTCONDITIONS: Value will be in the perimeter variable and return
 double calculatePerimeter(){
     double perimeter = PI * askForUserInput();          // calculating the perimeter (circumference)
     printf("The perimeter of the city encompassed by your request is %.3lf\n", perimeter);
     return 2; // How hard I found this function to be.
 } // calculatePerimeter
 
-// // OBJECTIVE: Calculate area from 2 points
-// // INPUT: Diameter calculation and PI declaration/variable
-// // OUTPUT: Area of the city (circle)
+// OBJECTIVE: Calculate area from 2 points
+// INPUT: Diameter calculation and PI declaration/variable
+// OUTPUT: Area of the city (circle)
+// PRECONDITIONS: Inputs in the askForUserInput
+// POSTCONDITIONS: Value will be in the Area variable and return
 double calculateArea(){
     double diameter = askForUserInput();
     double radius = diameter / 2;                         // calculating the radius from the diameter
@@ -69,18 +78,22 @@ double calculateArea(){
     return 3; // How hard I found this function to be.
 } // calculateArea
 
-// // OBJECTIVE: Calculate width from 2 points
-// // INPUT: Reused diameter calculation
-// // OUTPUT: Width of the city (circle)
+// OBJECTIVE: Calculate width from 2 points
+// INPUT: Reused diameter calculation
+// OUTPUT: Width of the city (circle)
+// PRECONDITIONS: Inputs in the askForUserInput
+// POSTCONDITIONS: Value will be in the width variable and return
 double calculateWidth(){
     double width = askForUserInput();
     printf("The width of the city encompassed by your request is %.3lf\n", width);
     return 1; // How hard I found this function to be.
 } // calculateWidth
 
-// // OBJECTIVE: Calculate height from 2 points
-// // INPUT: Reused diameter calculation
-// // OUTPUT: Height of the city (circle)
+// OBJECTIVE: Calculate height from 2 points
+// INPUT: Reused diameter calculation
+// OUTPUT: Height of the city (circle)
+// PRECONDITIONS: Inputs in the askForUserInput
+// POSTCONDITIONS: Value in the height variable and return
 double calculateHeight(){
     double height = askForUserInput();
     printf("The height of the city encompassed by your request is %.3lf\n", height);
