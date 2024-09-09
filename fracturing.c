@@ -1,7 +1,7 @@
 //********************************************************
+// UCFID: 5450622
 // fracturing.c
 // Author: Carter Hildebrandt
-// UCFID: 5450622
 // Date: 9/5/24
 // Class: COP 3223, Professor Parra
 // Purpose: Calculate select properties defined by two points inputted by the user.
@@ -100,7 +100,11 @@ double calculateHeight(){
     return 1; // How hard I found this function to be.
 } // calculateHeight
 
-// Main function
+// OBJECTIVE: Main function
+// INPUT: None
+// OUTPUT: None
+// PRECONDITIONS: Inputs in the askForUserInput
+// POSTCONDITIONS: None
 int main(int arge, char **argv) {
     calculateDistance();
     calculatePerimeter();
